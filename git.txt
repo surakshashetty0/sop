@@ -61,8 +61,8 @@ push to GitHub
    62  git commit
    64  git pull --rebase origin main
    65  git push origin main
-Username for 'https://github.com': surakshashetty0
-Password for 'https://surakshashetty0@github.com':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
+Username for 'https://github.com': surakshasheTTTTIJJHHHYNMNNJNB
+Password for 'https://surakshashetty0@github.com':ghNJHJIJ
 
 create new branch
 Create a New Local Branch (staging):
