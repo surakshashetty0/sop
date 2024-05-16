@@ -1,0 +1,41 @@
+1.Both master and slave
+// docker installation
+
+    sudo apt update -y
+     sudo apt install docker.io -y
+    docker -v
+    systemctl start docker
+    sudo systemctl start docker
+    sudo systemctl enable docker
+
+// kubeadm installation
+
+sudo apt-get update
+sudo apt-get install -y apt-transport-https ca-certificates curl gpg
+
+curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.29/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
+
+echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.29/deb/ /' | sudo tee /etc/apt/sources.list.d/kubernetes.list
+
+sudo apt-get update
+sudo apt-get install -y kubelet kubeadm kubectl
+sudo apt-mark hold kubelet kubeadm kubectl
+
+sudo systemctl enable --now kubelet
+
+2.Master Node
+ sudo kubeadm init
+
+get join command copy that command
+
+// mkdir -p $HOME/.kube
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+//command you get
+
+3.Slave node 
+sudo kubeadm join -----------link
+
+4.Master node
+kubectl get nodes 
+

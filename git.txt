@@ -1,0 +1,75 @@
+
+    2  pwd
+like a folder create
+    3  mkdir gitproject
+    4  ll
+    5  pwd
+ go inside the folder
+    7  cd gitproject/
+    8  ll
+    9  pwd
+create a file which will created in working directory
+   10  touch micro
+   11  ll
+check content inside the file
+   12  cat micro
+edit file
+   13  vi micro
+go inside I and edit save :wq
+   14  cat micro
+install git sudo-super user do or command sudo su -
+   16  sudo yum install git -y
+   17  git --version
+   18  git status
+   19  pwd
+start fit after installing
+   20  git init
+   21  git config --global user.name
+   22  git config --global user.name "suraksha"
+   23  git config --global user.email "surakshashetty093@gmail.com"
+   24  git config --global user.email 
+   25  git config --global user.name
+   26  git status
+add file into git from working directory to staging directory
+   27  git add micro
+   28  git status
+again change some content inside the file micro
+   30  vi micro
+   31  cat micro
+   32  git status   
+(if we commit without add then the current changes will not get commited
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   micro)
+33 git add micro
+34 git status
+commit changes
+35 git commit -m "first commit"
+check current branch
+36 git branch
+create new branch
+37 git branch -M main
+ again you changed something on file and add and commit and to check the commits
+38 git log
+to check the changes between 2 commits
+39 git diff [68beec4e81171   7a0d5257b9d] 40 alpanumerical commit id get 5 numbers with space
+add remote repository to local repository (git to git hub connection)
+40 git remote add origin https://github.com/surakshashetty0/micro-devops.git
+push to GitHub
+   61  git add .
+   62  git commit
+   64  git pull --rebase origin main
+   65  git push origin main
+Username for 'https://github.com': surakshashetty0
+Password for 'https://surakshashetty0@github.com':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
+
+create new branch
+Create a New Local Branch (staging):
+== git checkout -b staging
+Push the Local Branch to Remote (origin):
+== git push -u origin staging
+Alternative Command to Set Upstream Branch or push
+== git push --set-upstream origin staging
+This command is equivalent to git push -u origin staging. It explicitly sets the upstream tracking branch for your local staging branch to origin/staging.
+
