@@ -80,7 +80,7 @@ first create build trigger
 project configure
 GitHub hook trigger for GITScm polling
 
-go to GitHub -setting create webook -get link from jenkin-- http://3.110.62.209:8080/github-webhook/) upto 8080
+go to GitHub -setting create webook -get link from jenkin-- http://11.11.11.11:8080/github-webhook/) upto 8080
 individual even -pull and push select and create
 
 create push and pull request
